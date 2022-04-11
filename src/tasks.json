@@ -1,0 +1,26 @@
+{
+    "tasks": [
+        {
+            "title": "Task 1",
+            "responsible": "Viviana",
+            "description": "Hacer comida",
+            "priority":"low",
+            "accept": true
+
+        },
+        {
+            "title": "Task 2",
+            "responsible": "Jorge",
+            "description": "Limpiar la caja de arena",
+            "priority":"high",
+            "accept": false
+        },
+        {
+            "title": "Task 3",
+            "responsible": "Eva",
+            "description": "Hacer tatuajes",
+            "priority":"Medium",
+            "accept": false
+        }
+    ]
+}
