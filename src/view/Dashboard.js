@@ -2,25 +2,28 @@ import React from 'react';
 import { useState } from 'react';
 import logo from '../logo.svg'
 import Navigation from '../components/Navigation';
-import { tasks } from '../tasks.json';
-//import Card from '../components/Card';
+import tasks from '../tasks.json';
+
 
 const Dashboard = () => {
-    const [count, setCount] = useState(0);
+    const [todos, setTodos] = useState({ tasks });
 
-  const 
-  sumar = () => {
-        setCount(count + 1);
+    const showTasks = () => {
+        {
+            todos.map((todo, index) => (
+                <div className='card'>
+                    {todo.title}
+                </div>
+            ))
+        }
     }
 
     return (
         <div className="Dashboard">
             <Navigation />
-             
-             <p>Count of click {count} </p>
-             <button onClick={sumar}>Add</button>
+            {showTasks}
             <img src={logo} className="App-logo" alt="logo" />
-            <h1>My First React App</h1>
+            <h1>Hello, World!</h1>
         </div>
     );
 }

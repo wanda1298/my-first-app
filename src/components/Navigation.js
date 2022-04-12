@@ -5,7 +5,7 @@ const Navigation = () => {
     return (
         <nav className="navbar navbar-dark bg-dark">
             <a href="#" className="text-white">
-                TASKS
+                Tasks
             </a>
         </nav>
     )

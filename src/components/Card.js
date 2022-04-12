@@ -1,8 +1,13 @@
 import React from 'react'
 
 const Card = (props) => {
+
+  //Use hooks here
+
   return (
-    <div>card</div>
+    <div className='card'>
+      {props.title}
+    </div>
   )
 }
 
